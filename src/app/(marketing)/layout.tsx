@@ -1,7 +1,7 @@
 import "@/styles/globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import NavBar from "@/components/layout/navbar"
+import NavBar from "@/components/layout/site-nav"
 import { SiteFooter } from "@/components/layout/site-footer"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -22,7 +22,7 @@ export default function MarketingLayout({
       <body className={inter.className}>
         {/* <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" /> */}
         <NavBar />
-        <div className="background-svg">
+        {/* <div className="background-svg">
           <svg
             width="100%"
             height="100%"
@@ -67,7 +67,7 @@ export default function MarketingLayout({
             </defs>
             <rect width="100%" height="100%" fill="url(#grid)" />
           </svg>
-        </div>
+        </div> */}
         {children}
         <SiteFooter />
       </body>

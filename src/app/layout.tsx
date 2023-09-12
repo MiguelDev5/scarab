@@ -1,7 +1,20 @@
-import "@/styles/globals.css"
-import { Inter } from "next/font/google"
+import { Inter as FontSans } from "next/font/google"
+import localFont from "next/font/local"
+import { cn } from "@/lib/utils"
 
-const inter = Inter({ subsets: ["latin"] })
+import "@/styles/globals.css"
+import { ThemeProvider } from "@/components/theme-provider"
+
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+})
+
+// Font files can be colocated inside of `pages`
+const fontHeading = localFont({
+  src: "../../public/fonts/CalSans-SemiBold.woff2",
+  variable: "--font-heading",
+})
 
 export default function RootLayout({
   children,
@@ -9,9 +22,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" suppressHydrationWarning>
+      <head />
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable,
+          fontHeading.variable
+        )}
+      >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
+        </ThemeProvider>
       </body>
     </html>
   )

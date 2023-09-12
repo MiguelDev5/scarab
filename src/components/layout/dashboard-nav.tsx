@@ -15,7 +15,7 @@ import { UserAvatar } from "../user-avatar"
 export default function DashboardNavbar() {
   return (
     <>
-      <div className="fixed top-0 w-full flex justify-center border-y-2">
+      <div className="fixed top-0 w-full flex justify-center z-40 border-b">
         <div className="container mx-5 flex h-16 items-center justify-between w-full">
           <Link
             href="/"

@@ -9,7 +9,7 @@ export default function IndexPage() {
           href=""
           target="_blank"
           rel="noreferrer"
-          className="mx-auto mb-5 flex max-w-fit items-center justify-center hover:bg-slate-100 space-x-2 overflow-hidden rounded-full border border-slate-300 px-7 py-2"
+          className="mx-auto mb-5 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-slate-300 px-7 py-2"
         >
           <p className="text-sm font-semibold">Introducing Scarab</p>
         </a>
