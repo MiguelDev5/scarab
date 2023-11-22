@@ -16,7 +16,7 @@ export const dashboardConfig: DashboardConfig = {
     {
       title: "Projects",
       href: "/dashboard",
-      icon: "post",
+      icon: "boxes",
     },
     {
       title: "Billing",
