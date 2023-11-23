@@ -56,7 +56,7 @@ export function UserAvatar() {
         <DropdownMenuContent>
           <DropdownMenuLabel>
             {user?.given_name} {user?.family_name} <br />
-            <span className="w-[200px] truncate text-sm text-muted-foreground">
+            <span className="w-[200px] truncate text-[13px] text-muted-foreground">
               {user?.email}
             </span>
           </DropdownMenuLabel>

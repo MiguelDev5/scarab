@@ -25,6 +25,7 @@ import {
   X,
   Box,
   Boxes,
+  Search,
   type Icon as LucideIcon,
 } from "lucide-react"
 
@@ -73,4 +74,5 @@ export const Icons = {
   check: Check,
   box: Box,
   boxes: Boxes,
+  search: Search,
 }

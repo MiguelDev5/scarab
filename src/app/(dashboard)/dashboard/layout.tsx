@@ -1,7 +1,8 @@
 import { dashboardConfig } from "@/config/dashboard"
 import { DashboardNav } from "@/components/layout/nav"
-import { SiteFooter } from "@/components/layout/site-footer"
 import DashboardNavbar from "@/components/layout/dashboard-nav"
+
+import styles from "@/styles"
 
 interface DashboardLayoutProps {
   children?: React.ReactNode
@@ -15,7 +16,9 @@ export default async function DashboardLayout({
       <header>
         <DashboardNavbar />
       </header>
-      <div className="container grid flex-1 gap-12 md:grid-cols-[200px_1fr]">
+      <div
+        className={`${styles.containerWide} container grid flex-1 gap-12 md:grid-cols-[200px_1fr]`}
+      >
         <aside className="hidden w-[200px] flex-col md:flex">
           <DashboardNav items={dashboardConfig.sidebarNav} />
         </aside>
