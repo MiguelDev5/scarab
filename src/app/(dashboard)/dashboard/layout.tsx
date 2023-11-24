@@ -1,6 +1,7 @@
 import { dashboardConfig } from "@/config/dashboard"
 import { DashboardNav } from "@/components/layout/nav"
 import DashboardNavbar from "@/components/layout/dashboard-nav"
+import { Toaster } from "@/components/ui/toaster"
 
 import styles from "@/styles"
 
@@ -25,6 +26,7 @@ export default async function DashboardLayout({
         <main className="flex w-full flex-1 flex-col overflow-hidden">
           {children}
         </main>
+        <Toaster />
       </div>
     </div>
   )
