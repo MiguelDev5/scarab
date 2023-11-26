@@ -33,7 +33,7 @@ You can deploy your own hosted version of Scarab for greater privacy & control. 
 
 [![Deploy with Vercel](https://vercel.com/button)]()
 
-## Tech Stack
+## Built Using
 
 - [Next.js](https://nextjs.org/) – Framework
 - [Typescript](https://www.typescriptlang.org/) – Language
@@ -49,5 +49,3 @@ Scarab is built as a standard Next.js application with [Middleware](https://next
 ## Author
 
 - Kelvin Yelyen ([@kelvinyelyen](https://twitter.com/kelvinyelyen))
-
-## License
