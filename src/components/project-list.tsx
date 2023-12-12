@@ -8,7 +8,7 @@ const ProjectsList: React.FC = () => {
   const { projects } = useContext(ProjectContext)
 
   return (
-    <div className="grid grid-cols-4 gap-4">
+    <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-4">
       {projects.map((project) => (
         <div key={project.id} className="col-span-1">
           <ProjectCard project={project} />
