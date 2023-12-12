@@ -12,8 +12,8 @@ import {
 type Project = {
   id: number
   name: string
-  description: string
-  releaseNotes: string
+  githubUrl: string
+  imported: string
   // Other project properties
 }
 
@@ -27,13 +27,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <Card>
         <CardHeader>
           <CardTitle>{project.name}</CardTitle>
-          <CardDescription>{project.description}</CardDescription>
+          <CardDescription>{project.githubUrl}</CardDescription>
         </CardHeader>
         <CardContent>
           <p></p>
         </CardContent>
         <CardFooter>
-          <p></p>
+          <p>{project.imported}</p>
         </CardFooter>
       </Card>
     </div>

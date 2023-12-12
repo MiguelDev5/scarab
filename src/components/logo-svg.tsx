@@ -9,17 +9,15 @@ const Logo = () => {
     <div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="20"
+        width="25"
+        height="25"
         viewBox="0 0 60 60"
         className="mr-2"
       >
         <g
           transform="translate(0.000000,60.000000) scale(0.100000,-0.100000)"
           fill="#FFFFFF"
-          className={`rounded-sm ${
-            isDarkMode ? "fill-white" : "fill-black"
-          }`}
+          className={`rounded-sm ${isDarkMode ? "fill-white" : "fill-black"}`}
           stroke="none"
         >
           <path

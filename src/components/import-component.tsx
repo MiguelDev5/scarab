@@ -10,9 +10,9 @@ const ImportComponent: React.FC = () => {
     // Example demo data (replace this with your actual fetched data)
     const newProject = {
       id: 1,
-      name: "Demo Project",
-      description: "This is a demo project description.",
-      releaseNotes: "Version 1.0 released!",
+      name: "Scarab",
+      githubUrl: "github.com/kelvin",
+      imported: "8d ago via",
     }
 
     addProject(newProject)

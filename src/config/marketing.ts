@@ -1,17 +1,18 @@
-export interface MarketingConfig {
-  title: string
-  href: string
+import { MarketingConfig } from "@/types"
+
+export const marketingConfig: MarketingConfig = {
+  mainNav: [
+    {
+      title: "Features",
+      href: "/features",
+    },
+    {
+      title: "Support",
+      href: "/support",
+    },
+    {
+      title: "Changelog",
+      href: "/changelog",
+    },
+  ],
 }
-
-export const marketingConfig: MarketingConfig[] = [
-  {
-    title: "Features",
-    href: "/features",
-  },
-  {
-    title: "Documentation",
-    href: "/docs",
-  },
-]
-
-

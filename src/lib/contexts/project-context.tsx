@@ -5,8 +5,8 @@ import React, { createContext, useState, useContext, FC } from "react"
 type Project = {
   id: number
   name: string
-  description: string
-  releaseNotes: string
+  githubUrl: string
+  imported: string
 }
 
 type ProjectContextType = {

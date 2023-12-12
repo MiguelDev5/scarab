@@ -7,7 +7,6 @@ import { Separator } from "@/components/ui/separator"
 import { Button } from "@/components/ui/button"
 import { useToast } from "@/components/ui/use-toast"
 
-
 export default function IndexPage() {
   const { theme: currentTheme, setTheme } = useTheme()
   const [selectedTheme, setSelectedTheme] = useState(currentTheme)
@@ -40,7 +39,7 @@ export default function IndexPage() {
               className="mr-2 appearance-none"
             />
             <div
-              className={`items-center rounded-md bg-popover p-1 hover:bg-accent hover:text-accent-foreground ${
+              className={`items-center rounded-md  p-1 hover:bg-accent hover:text-accent-foreground ${
                 selectedTheme === "light" ? "border-1 border-foreground" : ""
               }`}
             >
@@ -72,8 +71,8 @@ export default function IndexPage() {
               className="mr-2 appearance-none"
             />
             <div
-              className={`items-center rounded-md bg-popover p-1 hover:bg-accent hover:text-accent-foreground ${
-                selectedTheme === "dark" ? "border-2 border-foreground" : ""
+              className={`items-center rounded-md p-1 hover:bg-accent hover:text-accent-foreground ${
+                selectedTheme === "dark" ? "border-1 border-foreground" : ""
               }`}
             >
               <div className="space-y-2 rounded-sm bg-black p-2">
