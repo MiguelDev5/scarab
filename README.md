@@ -1,6 +1,6 @@
 # Scarab
 ### Introduction
-Scarab is an open source web application designed for efficient release management, integrating with GitHub to automatically retrieve and process release data. 
+Scarab is an open source web application engineered for streamlined release coordination, seamlessly integrating with GitHub to automatically fetch and analyze release data.
 
 Here are some of the features that Scarab provides out-of-the-box:
 - [GitHub API Integration](#github-api-integration)
@@ -33,13 +33,12 @@ You can deploy your own hosted version of Scarab for greater privacy & control. 
 
 [![Deploy with Vercel](https://vercel.com/button)]()
 
-## Tech Stack
-
-- [Next.js](https://nextjs.org/) – Framework
-- [Typescript](https://www.typescriptlang.org/) – Language
-- [Tailwind](https://tailwindcss.com/) – CSS
-- [Kinde Auth](https://kinde.com/) – Auth
-- [Vercel](https://vercel.com/) – Hosting
+## Built Using
+- [Next.js](https://nextjs.org/): Powers the interactive user interface for managing release notes.
+- [Typescript](https://www.typescriptlang.org/): Provides strong typing and code consistency for maintainability.
+- [Tailwind CSS](https://tailwindcss.com/): Streamlines UI development for a clean and responsive interface.
+- [Kinde Auth](https://kinde.com/): Manages user authentication and secures release note content.
+- [Vercel](https://vercel.com/): Hosts and deploys the release note manager for seamless accessibility.
 
 
 ## Implementation
@@ -49,5 +48,3 @@ Scarab is built as a standard Next.js application with [Middleware](https://next
 ## Author
 
 - Kelvin Yelyen ([@kelvinyelyen](https://twitter.com/kelvinyelyen))
-
-## License
