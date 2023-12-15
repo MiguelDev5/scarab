@@ -1,6 +1,6 @@
 # Scarab
 ### Introduction
-Scarab is an open source web application engineered for streamlined release coordination, seamlessly integrating with GitHub to automatically fetch and analyze release data.
+Scarab comprehensive changelog management tool for software development teams. Effortlessly track detailed version history, commit messages, and technical changes. Seamlessly integrates with Git for automated updates. Simplify version control and enhance team collaboration.
 
 Here are some of the features that Scarab provides out-of-the-box:
 - [GitHub API Integration](#github-api-integration)
