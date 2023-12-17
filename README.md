@@ -1,24 +1,14 @@
 # Scarab
 ### Introduction
-Scarab comprehensive changelog management tool for software development teams. Effortlessly track detailed version history, commit messages, and technical changes. Seamlessly integrates with Git for automated updates. Simplify version control and enhance team collaboration.
+Scarab comprehensive changelog management tool for software development teams. Effortlessly track detailed technical changes. 
 
 Here are some of the features that Scarab provides out-of-the-box:
-- [GitHub API Integration](#github-api-integration)
 - [Data Visualization](#data-visualization)
-- [Comparative Analysis](#comparative-analysis)
 - [Export Functionality](#export-functionality)
-
-### GitHub API Integration
-
-Scarab leverages the GitHub API to establish a direct connection with repositories. This enables automated data retrieval, eliminating the need for manual updates.
 
 ### Data Visualization
 
 Scarab employs a variety of visualization techniques, including charts and timelines, to transform raw data into meaningful insights. Data visualization libraries compatible with modern web technologies are utilized.
-
-### Comparative Analysis
-
-Scarab enables users to compare two different logs. This involves analyzing differences between versions and presenting them in an intelligible manner.
 
 ### Export Functionality
 
