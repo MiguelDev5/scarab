@@ -30,7 +30,7 @@ export function NavBar({ items, children }: MainNavProps) {
             className="flex items-center font-display"
           >
             <Logo />
-            <p className="font-semibold text-lg">Scarab</p>
+            <p className="text-base">Scarab</p>
           </Link>
           {items?.length ? (
             <nav className="hidden gap-6 md:flex">

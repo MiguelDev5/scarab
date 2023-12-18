@@ -1,16 +1,21 @@
 import { useTheme } from "next-themes"
 
-const Logo = () => {
-  const { resolvedTheme } = useTheme() // Get the current theme mode
+interface LogoProps {
+  width?: string
+  height?: string
+}
 
-  const isDarkMode = resolvedTheme === "dark" // Determine if it's dark mode
+const Logo: React.FC<LogoProps> = ({ width = "25", height = "25" }) => {
+  const { resolvedTheme } = useTheme()
+
+  const isDarkMode = resolvedTheme === "dark" 
 
   return (
     <div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="25"
-        height="25"
+        width={width}
+        height={height}
         viewBox="0 0 60 60"
         className="mr-2"
       >

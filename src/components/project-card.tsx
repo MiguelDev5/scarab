@@ -1,5 +1,4 @@
 import React from "react"
-
 import {
   Card,
   CardContent,
@@ -8,32 +7,33 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import { formatTimeAgo } from "@/lib/dates"
 
-type Project = {
+interface Changelog {
   id: number
   name: string
-  githubUrl: string
-  imported: string
-  // Other project properties
+  description: string
+  timestamp: string
 }
 
-type ProjectCardProps = {
-  project: Project
+interface ProjectCardProps {
+  changelog: Changelog
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ changelog }) => {
+  const timeAgo = formatTimeAgo(changelog.timestamp)
   return (
-    <div className="project-card ">
+    <div className="project-card">
       <Card>
         <CardHeader>
-          <CardTitle>{project.name}</CardTitle>
-          <CardDescription>{project.githubUrl}</CardDescription>
+          <CardTitle>{changelog.name}</CardTitle>
+          <CardDescription>{changelog.description}</CardDescription>
         </CardHeader>
         <CardContent>
           <p></p>
         </CardContent>
         <CardFooter>
-          <p>{project.imported}</p>
+          <p>{timeAgo}</p>
         </CardFooter>
       </Card>
     </div>
