@@ -73,6 +73,3 @@ export default function IndexPage() {
     </main>
   )
 }
-
-// y1jl9qzmpr4jf0qdrh4x
-// pscale_pw_w9R0sDtprctsKA2Zyswwg5ssZkXNFGcLaS2lnfVe5G6
